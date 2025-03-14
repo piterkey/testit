@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template_string, jsonify
-import re  # Импортируем модуль для работы с регулярными выражениями
+import re
 
 app = Flask(__name__)
 
