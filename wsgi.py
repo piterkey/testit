@@ -1,6 +1,4 @@
-from testit import testit
-
-app = testit.app()
+from testit.testit import app
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
