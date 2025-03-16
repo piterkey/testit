@@ -1,0 +1,12 @@
+# Exported from Render on 2025-03-16T09:25:46Z
+services:
+- type: web
+  name: testit
+  runtime: python
+  repo: https://github.com/piterkey/testit
+  branch: master
+  plan: free
+  region: frankfurt
+  buildCommand: pip install -r requirements.txt
+  startCommand: gunicorn wsgi:app
+version: "1"
